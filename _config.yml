@@ -1,1 +1,9 @@
+title: tty-share - terminal sharing
+url: https://tty-share.com
+description: Terminal sharing over the Internet
+author: Elis Popescu
+
 theme: jekyll-theme-tactile
+plugins:
+  - jekyll-seo-tag
+
