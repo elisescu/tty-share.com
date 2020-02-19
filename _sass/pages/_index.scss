@@ -1,0 +1,43 @@
+.page-home {
+  background-image: url('../images/tty-share-main.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right $header-height + 10;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 70%;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 60%;
+  }
+}
+
+.modal-dialog {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+
+#typewriterDiv {
+  font-size: 1.1rem;
+  line-height: 78px;
+  font-weight: bold;
+  font-family: 'Monaco', sans-serif;
+}

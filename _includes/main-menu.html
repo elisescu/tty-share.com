@@ -1,0 +1,12 @@
+<div id="main-menu" class="main-menu">
+  <ul>
+     <li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+    <li><a href="{{site.baseurl}}/how-it-works/" class="{% if page.url contains 'how-it-works' %}current{% endif %}">Docs</a></li>
+
+    <li>
+      <div>
+        <a href="{{site.baseurl}}/install" class="button">Install</a>
+      </div>
+    </li>
+  </ul>
+</div>

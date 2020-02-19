@@ -1,9 +1,16 @@
-title: tty-share - terminal sharing
-url: https://tty-share.com
-description: Terminal sharing over the Internet
-author: Elis Popescu
+baseurl: ''
+exclude: ['README.md']
+permalink: pretty
+title: 'tty-share'
+description: 'Simple fast and secure terminal sharing for Linux and Macos.'
+tagline: 'Terminal sharing for Linux and Macos'
+url: tty-share.com
 
-theme: jekyll-theme-tactile
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
+google_analytics_id: UA-143397005-1
+
 plugins:
+  - jekyll-environment-variables
   - jekyll-seo-tag
-

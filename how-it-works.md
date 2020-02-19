@@ -1,7 +1,7 @@
 ---
-title: tty-share
-layout: default
-description: Terminal sharing over the Internet
+title: 'DOCS'
+layout: page
+bodyClass: page-single
 ---
 
 ## Motivation
@@ -12,41 +12,27 @@ The gif below shows the very basic use-case, when the `tty-share` is launches `b
 
 ![demo](https://github.com/elisescu/tty-share/raw/master/doc/demo.gif)
 
-### Similar tools
+## Similar tools
 
-#### VSC (Visual Studio Code) [Live Share](https://docs.microsoft.com/en-us/visualstudio/liveshare/use/vscode)
+### VSC (Visual Studio Code) [Live Share](https://docs.microsoft.com/en-us/visualstudio/liveshare/use/vscode)
 
 I've tried Visual Studio Code sharing, and it seems to work relatively well. One big advantage is that both persons in the session can write code, and navigate independently of each other. It also supports terminal sharing.
 
 However, the two disadvantages with this tool are the need of logging in with a Github (or Microsoft) account, and having to install Visual Studio Code on the remote side too. I don't want to force the remote person to install VSC just for them to get access to a terminal session. Visual Studio Code might be popular in the web development circles, but it is not popular in the other development corners.
 
-#### [tmate.io](https://tmate.io/)
+### [tmate.io](https://tmate.io/)
 
 This is a great tool, and I used it quite a few times before. At the time I started my project, [tmate.io](https://tmate.io) didn't have the option to join the session from the browser, and one had to use `ssh`. In most cases, `ssh` is not a problem at all - in fact it's even preferred, but there are cases when you just don't have easy access to an `ssh` client, e.g.: joining from a Windows machine, or from your smartphone. In the meantime, the project added some support for joining a terminal session in the browser too.
 
 Perhaps one downside with *tmate* is that it comes with quite a few dependencies which can make your life complicated if you want to compile it for ARM, for example. Running it on my raspberry pi might not be as simple as you want it, unless you use Debian.
 
-------
+## How it works
 
-## How to get it
+The `tty-share` command will start a shell (based on the value of `$SHELL` env variable), and then route the output and input to the `tty-share`, and finally to the browser session.
 
-Since it is written in GO, it compiles as a single static binary, which you can just download and run. No dependencies - just get the binary for your platform, from: [https://github.com/elisescu/tty-share/releases](https://github.com/elisescu/tty-share/releases).
+More information will come. Until then, the source code is the best place to find more:
+[github.com/elisescu/tty-share](https://github.com/elisescu/tty-share).
 
-
-It has a client side: `tty-share` - the tool that starts the shared session, and server side: `tty-server` - required to share the session over the Internet (outside the local network).
-
-A server instances runs at [tty-share.com](https://tty-share.com), so you only need the `tty-share` binary to use it:
-
-``` bash
-bash$ tty-share
-
-Web terminal: https://go.tty-share.com/s/Vqp_to67Q8gMhOVTzZ_nP8TGjB_hzNu8kIT5IdZ1rqI=
-
-```
-
-## Open-source
-
-Both the command line tool, and the server side, are open-source. They can be found here, together with more information about how they work: [https://github.com/elisescu/tty-share](https://github.com/elisescu/tty-share)
 
 ## Future work
 
@@ -66,5 +52,5 @@ If you cared to try it, and have feedback, or a problem/question, I would love t
 
 ## Credits
 
-* [github-corners](https://github.com/tholman/github-corners)
+* Jekyll theme: [jekyll-serif-theme](https://github.com/JugglerX/jekyll-serif-theme)
 * More [here](https://github.com/elisescu/tty-share#credits)
