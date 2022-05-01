@@ -2,8 +2,8 @@ baseurl: ''
 exclude: ['README.md']
 permalink: pretty
 title: 'tty-share'
-description: 'Simple fast and secure terminal sharing for Linux and Macos.'
-tagline: 'Terminal sharing for Linux and Macos'
+description: 'Simple, open source, fast and secure terminal sharing for Linux and Macos over the web. Share your terminal session over the Internet for pair programming.'
+tagline: 'Terminal session sharing for Linux and Macos over the Internet'
 url: tty-share.com
 
 sass:
@@ -14,3 +14,11 @@ google_analytics_id: UA-143397005-1
 plugins:
   - jekyll-environment-variables
   - jekyll-seo-tag
+
+twitter:
+  username: elisescu
+  card: summary
+
+logo: /assets/images/logo.png
+
+author: elisescu, Elis Popescu
